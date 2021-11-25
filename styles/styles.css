@@ -257,6 +257,9 @@ SECTIONS
   text-align: center;
 }
 .section h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
   letter-spacing: var(--spacing);
   color: var(--clr-primary-5);
   font-style: italic;
@@ -264,4 +267,6 @@ SECTIONS
 .section img {
   border-radius: var(--radius);
   margin: 0 auto;
+  width: 90%;
+  padding-bottom: 1rem;
 }
