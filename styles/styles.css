@@ -90,11 +90,6 @@ a {
   text-decoration: none;
 }
 
-/* img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-} */
-
 h1,
 h2,
 h3,
@@ -256,8 +251,9 @@ HERO
   height: 100vh;
   width: 100vw;
   padding: 2rem;
+
   background: linear-gradient(rgba(101, 150, 74, 0.3), rgba(0, 0, 0, 0.7)),
-    url("../images/5.jpg") center/cover no-repeat;
+    url("../images/25.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -293,31 +289,53 @@ SECTIONS
 section {
   padding-top: 6rem;
 }
-.section {
+.article {
   text-align: center;
   padding: 0 1rem 3rem 1rem;
 }
-.section h3 {
+.article h3 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   letter-spacing: var(--spacing);
-  color: var(--clr-primary-5);
   font-style: italic;
 }
-.section img {
+.article img {
   display: block;
   border-radius: var(--radius);
   margin: 1rem auto;
   width: 90%;
+  max-width: 350px;
 }
-.section p {
+.article p {
   max-width: 80%;
   margin: 3rem auto;
+  color: var(--clr-primary-5);
 }
 .pair {
-  background: var(--clr-orange);
+  background: #e94b0c;
+}
+.impair-text {
+  color: var(--clr-primary-5);
+}
+.pair-text {
+  color: white !important;
 }
 
+@media screen and (min-width: 768px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .pair-img {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  .impair-img {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+}
 /* 
 ///////////////////////////////////
 FOOTER
