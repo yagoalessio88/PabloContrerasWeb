@@ -219,6 +219,10 @@ nav {
   height: 100vh;
   width: 100vw;
 }
+.nav-links ul {
+  text-align: center;
+  width: 80%;
+}
 .nav-close {
   position: absolute;
   top: 5%;
@@ -228,14 +232,11 @@ nav {
   background: transparent;
 }
 .nav-links li {
+  width: 100%;
   padding-bottom: 1rem;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   font-size: 1.5rem;
-}
-.nav-links a {
-  color: black;
-  cursor: default;
 }
 .hide-nav {
   display: none;

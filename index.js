@@ -26,14 +26,15 @@ const smoothScrollTo = (id) => {
 };
 
 const toggleNavLinks = (e) => {
+  console.log(e.target);
   if (e.target.parentElement.classList.contains("nav-toggle")) {
     showNavLinks();
   }
   if (e.target.parentElement.classList.contains("nav-close")) {
     hideNavLinks();
   }
-  if (e.target.parentElement.classList.contains("anchor-link")) {
-    const id = e.target.parentElement.dataset.id;
+  if (e.target.classList.contains("anchor-link")) {
+    const id = e.target.dataset.id;
     smoothScrollTo(id);
   }
 };
