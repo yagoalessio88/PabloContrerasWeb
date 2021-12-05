@@ -27,10 +27,16 @@ const smoothScrollTo = (id) => {
 
 const toggleNavLinks = (e) => {
   console.log(e.target);
-  if (e.target.parentElement.classList.contains("nav-toggle")) {
+  if (
+    e.target.parentElement.classList.contains("nav-toggle") ||
+    e.target.classList.contains("nav-toggle")
+  ) {
     showNavLinks();
   }
-  if (e.target.parentElement.classList.contains("nav-close")) {
+  if (
+    e.target.parentElement.classList.contains("nav-close") ||
+    e.target.classList.contains("nav-close")
+  ) {
     hideNavLinks();
   }
   if (e.target.classList.contains("anchor-link")) {
