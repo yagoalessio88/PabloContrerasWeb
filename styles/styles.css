@@ -397,6 +397,15 @@ section {
   color: var(--clr-turquoise-dark);
   font-size: 1.5rem;
 }
+.text-toggle-btn {
+  background: transparent;
+  border: transparent;
+  font: var(--ff-text);
+  color: #f17105;
+}
+.text-toggle-btn:hover {
+  cursor: pointer;
+}
 
 /* PAIR SECTIONS */
 .pair {
