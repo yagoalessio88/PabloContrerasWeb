@@ -49,13 +49,13 @@ const toggleNavLinks = (e) => {
 navBar.addEventListener("click", toggleNavLinks);
 mainSections.addEventListener("click", hideNavLinks);
 
+///////////////////////////////////////////////////////////////////////////////////
 //text functionality
-window.addEventListener("DOMContentLoaded", () => {
-  shortText();
-});
-const bioTextContainer = document.querySelector(".bio-text-container");
 
-const wholeText = () => {
+const bioTextContainer = document.querySelector(".bio-text-container");
+const albumTextContainer = document.querySelector(".album-text-container");
+
+const longBioText = () => {
   bioTextContainer.innerHTML = `<p class="impair-text">
             
 El cantautor nacido en Catalunya durante el exilio de su familia, pasó gran parte de su infancia en Barcelona hasta el retorno de sus padres a Mendoza donde descubriría su relación con la música.  <br>
@@ -79,27 +79,65 @@ Mendoza al Eduardo Pinto Ensamble. <br>
 •Gira Uruguay (festival "Jazz a la calle" - enero 2009 y 2011). <br>
 •Gira Cuba ("Festival del Fuego" - julio de 2013). <br>
 •Pemio "Trajectoria" (setiembre 2013) del 5° Concurso de 
-Música Popular Brasileña "Brasil en Mendoza" y posterior viaje de intercambio a la Escuela Ton Jobim de San Pablo, Brasil.<button class="text-toggle-btn close">Leer menos</button>
-
-          </p> `;
+Música Popular Brasileña "Brasil en Mendoza" y posterior viaje de intercambio a la Escuela Ton Jobim de San Pablo, Brasil.<button class="text-toggle-btn close">...Leer menos</button>
+</p> `;
 };
-const shortText = () => {
-  bioTextContainer.innerHTML = `<p class="impair-text">
-            
+const shortBioText = () => {
+  bioTextContainer.innerHTML = `<p class="impair-text">          
 El cantautor nacido en Catalunya durante el exilio de su familia, pasó gran parte de su infancia en Barcelona hasta el retorno de sus padres a Mendoza donde descubriría su relación con la música.  <br>
-Es hijo de Antonio Contreras, voz de los grupos Canturía y Markama entre otros, se licenció en Música Popular Latinoamericana en la UNCuyo y ha colaborado para músicos como Horacio Gómez, Juampi Dicesare y Analía Garcetti. <button class="text-toggle-btn open">Leer más</button>
-          </p> `;
+Es hijo de Antonio Contreras, voz de los grupos Canturía y Markama entre otros, se licenció en Música Popular Latinoamericana en la UNCuyo y ha colaborado para músicos como Horacio Gómez, Juampi Dicesare y Analía Garcetti. <button class="text-toggle-btn open">Leer más...</button></p> `;
 };
+
+//////////////////////////////////////album text functions
+const longAlbumText = () => {
+  albumTextContainer.innerHTML = `<p class="pair-text">
+            Primer disco solista donde me animo a explorar el mundo de la canción. Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación. <br>
+            Este material cuenta con la producción musical, dirección y arreglos de Rodrigo Botacaulli y fué grabado entre mayo-julio del 2018 en distintos estudios como:  “Nuestro” Estudio (Buenos Aires), “Las Gracias” Estudio (Buenos Aires), Estudio Páramo (Mendoza) y Estudio de Alejandro Fränkel (Barcelona). Cuenta con las invaluables colaboraciones de: Martín Cappi, Matías García, Ernesto Pérez Matta, Mailén Obrador, Paula Neder, Emilio “Yoya” Jofré, Leo “Fugy” Altavilla, Tito Velazquez y Walter Ulloa .<br><button class="album-text-toggle-btn close">...Leer menos</button>
+            <br /><br>
+            Disponible en las siguientes plataformas:
+          </p>
+          <div class="pair-links">
+            <a target="_blank" href="https://open.spotify.com/album/0XsDuYm5jdxBmGGvXA47SF?si=ynReJMMETG2dFl_nUkDgFQ&nd=1
+            "><i class="fab fa-spotify"></i></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=xeYCTuCM3aA" 
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>`;
+};
+const shortAlbumText = () => {
+  albumTextContainer.innerHTML = `<p class="pair-text">
+            Primer disco solista donde me animo a explorar el mundo de la canción. Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación.<br><button class="album-text-toggle-btn open">Leer más...</button>
+            <br /><br>
+            Disponible en las siguientes plataformas:
+          </p>
+          <div class="pair-links">
+            <a target="_blank"
+              href="https://open.spotify.com/album/0XsDuYm5jdxBmGGvXA47SF?si=ynReJMMETG2dFl_nUkDgFQ&nd=1
+            "><i class="fab fa-spotify"></i></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=xeYCTuCM3aA"><i class="fab fa-youtube"></i></a>
+          </div>`;
+};
+/////////window content loaded
+window.addEventListener("DOMContentLoaded", () => {
+  shortBioText();
+  shortAlbumText();
+});
+//////text btn event listeners
 bioTextContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("open")) {
-    wholeText();
+    longBioText();
   }
   if (e.target.classList.contains("close")) {
-    shortText();
+    shortBioText();
     smoothScrollTo(1);
   }
 });
-//get div element
-//return p.200palabras + button
-//compuerta logica para boton
-//click return p completo + button
+albumTextContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("open")) {
+    longAlbumText();
+  }
+  if (e.target.classList.contains("close")) {
+    shortAlbumText();
+    smoothScrollTo(2);
+  }
+});
