@@ -4,12 +4,10 @@ FONTS
 ////////////////////////////
 */
 
-/* titulos   'Libre Franklin', sans-serif;*/
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap");
-/* titulos secundarios  'Prompt', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap");
-/* textos  'Biryani', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap");
+/* titulos   catamaran */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap");
+/* textos  martel */
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap");
 /* 
 ////////////////////////////
 General Border-Box reset 
@@ -70,9 +68,8 @@ Variables
   --clr-grey-9: #e6e6e6;
   --clr-grey-10: #fafafa;
   --clr-white: #fff;
-  --ff-title: "Libre Franklin", sans-serif;
-  --ff-sec-title: "Prompt", sans-serif;
-  --ff-text: "Biryani", sans-serif;
+  --ff-title: "Catamaran", sans-serif;
+  --ff-text: "Martel", serif;
   --transition: all 0.5s ease-out;
   --spacing: 0.25rem;
   --radius: 0.5rem;
