@@ -46,7 +46,9 @@ Variables
   --clr-pink-7: rgb(151, 4, 90);
 
   --clr-orange-: #f17105;
-  --clr-orange-5: #f45d01;
+  --clr-orange-5: rgba(25, 122, 114, 0.9);
+
+  /* #f45d01 */
 
   --clr-turquoise-light: rgb(2, 168, 158);
   /* --clr-turquoise-dark: #116d65; */
@@ -375,7 +377,7 @@ section {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   letter-spacing: var(--spacing);
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--clr-turquoise-dark);
 }
 .impair-img {
@@ -436,7 +438,7 @@ section {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   letter-spacing: var(--spacing);
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--clr-grey-9);
 }
 .pair-img {
