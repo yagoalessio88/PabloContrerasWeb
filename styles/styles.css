@@ -34,28 +34,13 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-pink-1: rgb(245, 143, 203);
-  --clr-pink-2: rgb(242, 118, 191);
-  --clr-pink-3: rgb(238, 68, 168);
-  --clr-pink-4: rgb(235, 43, 156);
-  /* primary/main color */
-  --clr-pink-5: rgb(232, 6, 139);
-  /* lighter shades of primary color */
-  --clr-pink-6: rgb(174, 5, 104);
-  --clr-pink-7: rgb(151, 4, 90);
-
-  --clr-orange-: #f17105;
+  /* MAIN COLOR IN USE */
   --clr-orange-5: rgba(25, 122, 114, 0.9);
 
-  /* #f45d01 */
-
-  --clr-turquoise-light: rgb(2, 168, 158);
-  /* --clr-turquoise-dark: #116d65; */
-  /* test */
-  --clr-turquoise-dark: #21625d;
-
-  --clr-orange: #e94b0c;
+  /* SECONDARI COLOR IN USE */
+  --clr-turquoise-dark: rgba(143, 45, 86, 0.8);
+  /*-----------------------------------------------------------*/
+  --clr-orange-: #f17105;
 
   /* darkest grey - used for headings */
   --clr-grey-1: #3a3a3a;
@@ -276,6 +261,13 @@ NAVBAR
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .nav-center h2 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    display: block;
+    max-height: 5rem;
+  }
   .nav-links {
     position: fixed;
     display: flex;
@@ -393,6 +385,10 @@ section {
   margin: 3rem auto;
   color: var(--clr-turquoise-dark);
 }
+.impair-text,
+h5 {
+  color: var(--clr-turquoise-dark);
+}
 .impair-links {
   padding: 0 4rem;
   display: flex;
@@ -401,7 +397,7 @@ section {
 .impair-links a {
   transition: var(--transition);
   color: var(--clr-turquoise-dark);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .text-toggle-btn {
   padding: 0.1rem;
@@ -485,11 +481,29 @@ section {
     grid-column: 2/3;
     grid-row: 1/-1;
   }
+  .impair-links a {
+    font-size: 2rem;
+  }
+  .pair-links a {
+    font-size: 2rem;
+  }
   .impair-links a:hover {
     transform: scale(1.2);
   }
   .pair-links a:hover {
     transform: scale(1.2);
+  }
+  .impair-title {
+    font-size: 3rem;
+  }
+  .impair-text {
+    font-size: 1.1rem;
+  }
+  .pair-title {
+    font-size: 3rem;
+  }
+  .pair-text {
+    font-size: 1.1rem;
   }
 }
 /* 
@@ -502,7 +516,6 @@ footer {
   background: var(--clr-grey-3);
   height: 6rem;
   padding: 2rem 1rem 1rem 1rem;
-
   text-align: center;
   color: white;
 }
