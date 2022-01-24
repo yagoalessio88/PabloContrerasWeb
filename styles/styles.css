@@ -253,6 +253,7 @@ NAVBAR
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   font-size: 1.5rem;
+  color: var(--clr-turquoise-dark);
 }
 .nav-links li:hover {
   cursor: pointer;
