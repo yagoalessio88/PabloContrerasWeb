@@ -204,20 +204,20 @@ NAVBAR
   z-index: 10;
 }
 .nav-center h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--clr-turquoise-dark);
   padding-top: 1rem;
 }
 .logo {
   display: block;
-  max-height: 2rem;
+  max-height: 2.5rem;
 }
 .nav-toggle {
   width: 3rem;
   height: 2rem;
   border: transparent;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .nav-toggle i {
   color: rgba(0, 0, 0, 0.7b);
