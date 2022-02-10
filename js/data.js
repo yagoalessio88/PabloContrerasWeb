@@ -24,7 +24,7 @@ const longBio = `<p class="impair-text">
                  Música Popular Brasileña "Brasil en Mendoza" y posterior viaje de intercambio a la Escuela Ton Jobim de San Pablo, Brasil.<button class="text-toggle-btn close">...leer menos</button>
                  </p> `;
 const shortAlbum = `<p class="pair-text">
-                     Primer disco solista donde me animo a explorar el mundo de la canción. Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación.<br><button class="album-text-toggle-btn open">...leer más</button>
+                     Primer disco solista donde me animo a explorar el mundo de la canción. "Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación".<br><button class="album-text-toggle-btn open">...leer más</button>
                      <br /><br>
                      <span class="italic">Disponible en las siguientes plataformas:</span>
                      </p>
@@ -35,7 +35,7 @@ const shortAlbum = `<p class="pair-text">
                      <a target="_blank" href="https://www.youtube.com/watch?v=xeYCTuCM3aA"><i class="fab fa-youtube"></i></a>
                      </div>`;
 const longAlbum = `<p class="pair-text">
-                   Primer disco solista donde me animo a explorar el mundo de la canción. Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación. <br>
+                   Primer disco solista donde me animo a explorar el mundo de la canción. "Consta de 12 tracks, todos de mi autoría, nacidos principalmente en la búsqueda de la sanación". <br>
                    Este material cuenta con la producción musical, dirección y arreglos de Rodrigo Botacaulli y fué grabado entre mayo-julio del 2018 en distintos estudios como:  “Nuestro” Estudio (Buenos Aires), “Las Gracias” Estudio (Buenos Aires), Estudio Páramo (Mendoza) y Estudio de Alejandro Fränkel (Barcelona). Cuenta con las invaluables colaboraciones de: Martín Cappi, Matías García, Ernesto Pérez Matta, Mailén Obrador, Paula Neder, Emilio “Yoya” Jofré, Leo “Fugy” Altavilla, Tito Velazquez y Walter Ulloa .<br><button class="album-text-toggle-btn close">...leer menos</button>
                    <br /><br>
                    <span class="italic">Disponible en las siguientes plataformas:</span>
