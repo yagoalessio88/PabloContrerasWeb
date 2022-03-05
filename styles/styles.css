@@ -140,7 +140,8 @@ p {
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     line-height: 1;
   }
 }
@@ -396,9 +397,9 @@ section {
   margin: 3rem auto;
   color: var(--clr-secondary);
 }
-.impair-text,
-h5 {
+.impair-text-title {
   color: var(--clr-secondary);
+  font-size: 2rem;
 }
 .impair-links {
   padding: 0 4rem;
