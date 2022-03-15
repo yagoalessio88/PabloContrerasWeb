@@ -183,17 +183,6 @@ GLOBAL CLASSES
 ANIMATIONS
 ////////////////////////////////// 
  */
-@-webkit-keyframes growAndBack {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes growAndBack {
   0% {
     transform: scale(1);
@@ -327,7 +316,6 @@ NAVBAR
     display: none;
   }
   .nav-toggle {
-    -webkit-animation: growAndBack 1.5s infinite ease;
     animation: growAndBack 1.5s infinite ease;
   }
 }
@@ -400,7 +388,6 @@ section {
   width: 70%;
   height: auto;
   max-height: 300px;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
@@ -465,7 +452,6 @@ section {
 .pair-img {
   width: 70%;
   height: auto;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--dark-shadow);
